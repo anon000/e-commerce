@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-Shoppers | Premium E-Commerce</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="bg-glow"></div>
+
+<!-- HEADER -->
+<header>
+    <div class="container nav-container">
+        <div class="logo">M-Shoppers</div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- CART BUTTON -->
+            <button class="cart-icon" id="openCart">
+                🛒 <span id="cartCount">0</span>
+            </button>
+
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container hero-content">
+
+        <div class="hero-text">
+            <span class="badge">Premium Online Shopping Experience</span>
+
+            <h1>Shop Smarter.<br>Experience Better.</h1>
+
+            <p>
+                Discover curated products with a modern, fast, and reliable shopping experience.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#products" class="btn-primary">Explore Products</a>
+                <a href="#contact" class="btn-secondary">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="floating-card card-1"></div>
+            <div class="floating-card card-2"></div>
+            <div class="floating-card card-3"></div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="section">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Featured Products</h2>
+            <p>Handpicked items for your everyday needs</p>
+        </div>
+
+        <div class="products-grid">
+
+            <div class="product-card">
+                <div class="product-image"></div>
+                <div class="product-content">
+                    <h3>Wireless Headphones</h3>
+                    <p>High-quality sound with deep bass.</p>
+                    <div class="product-footer">
+                        <span class="price">₱1,499</span>
+                        <button class="cart-btn" data-name="Wireless Headphones" data-price="1499">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"></div>
+                <div class="product-content">
+                    <h3>Smart Watch</h3>
+                    <p>Track fitness and notifications easily.</p>
+                    <div class="product-footer">
+                        <span class="price">₱2,299</span>
+                        <button class="cart-btn" data-name="Smart Watch" data-price="2299">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"></div>
+                <div class="product-content">
+                    <h3>Portable Speaker</h3>
+                    <p>Powerful sound anywhere you go.</p>
+                    <div class="product-footer">
+                        <span class="price">₱899</span>
+                        <button class="cart-btn" data-name="Portable Speaker" data-price="899">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <div class="container">
+        <div class="section-title"><h2>About M-Shoppers</h2></div>
+        <div class="about-content">
+            <p>M-Shoppers is a modern e-commerce store built for convenience and simplicity.</p>
+        </div>
+    </div>
+</section>
+
+<!-- WHY -->
+<section id="why-us" class="section">
+    <div class="container">
+        <div class="section-title"><h2>Why Choose Us</h2></div>
+
+        <div class="why-grid">
+            <div class="why-card"><h3>Easy Shopping</h3></div>
+            <div class="why-card"><h3>Modern Platform</h3></div>
+            <div class="why-card"><h3>Fast Support</h3></div>
+            <div class="why-card"><h3>Secure Experience</h3></div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Contact Us</h2>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+                <h3>Email</h3>
+                <p>trangia.marshall111@gmail.com</p>
+            </div>
+
+            <div class="contact-card">
+                <h3>Hours</h3>
+                <p>Available Anytime</p>
+            </div>
+
+            <div class="contact-card">
+                <h3>Action</h3>
+                <a href="#products" class="btn-primary">Browse Products</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <h3>M-Shoppers</h3>
+        <p>Premium E-Commerce Experience</p>
+        <p>© 2026 All Rights Reserved</p>
+    </div>
+</footer>
+
+<!-- CART -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<div class="cart-sidebar" id="cartSidebar">
+
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button id="closeCart">✖</button>
+    </div>
+
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-footer">
+        <h3>Total: ₱<span id="cartTotal">0</span></h3>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
