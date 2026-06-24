@@ -25,12 +25,6 @@
                 <li><a href="#why-us">Why Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-
-            <!-- CART BUTTON -->
-            <button class="cart-icon" id="openCart">
-                🛒 <span id="cartCount">0</span>
-            </button>
-
         </nav>
     </div>
 </header>
@@ -40,6 +34,7 @@
     <div class="container hero-content">
 
         <div class="hero-text">
+
             <span class="badge">Premium Online Shopping Experience</span>
 
             <h1>Shop Smarter.<br>Experience Better.</h1>
@@ -52,12 +47,11 @@
                 <a href="#products" class="btn-primary">Explore Products</a>
                 <a href="#contact" class="btn-secondary">Contact Us</a>
             </div>
+
         </div>
 
         <div class="hero-visual">
-            <div class="floating-card card-1"></div>
-            <div class="floating-card card-2"></div>
-            <div class="floating-card card-3"></div>
+            <!-- optional visual placeholder -->
         </div>
 
     </div>
@@ -75,37 +69,43 @@
         <div class="products-grid">
 
             <div class="product-card">
-                <div class="product-image"></div>
+                <div class="product-image">Image</div>
                 <div class="product-content">
                     <h3>Wireless Headphones</h3>
                     <p>High-quality sound with deep bass.</p>
                     <div class="product-footer">
                         <span class="price">₱1,499</span>
-                        <button class="cart-btn" data-name="Wireless Headphones" data-price="1499">Add to Cart</button>
+                        <button class="cart-btn" data-name="Wireless Headphones" data-price="1499">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
             </div>
 
             <div class="product-card">
-                <div class="product-image"></div>
+                <div class="product-image">Image</div>
                 <div class="product-content">
                     <h3>Smart Watch</h3>
                     <p>Track fitness and notifications easily.</p>
                     <div class="product-footer">
                         <span class="price">₱2,299</span>
-                        <button class="cart-btn" data-name="Smart Watch" data-price="2299">Add to Cart</button>
+                        <button class="cart-btn" data-name="Smart Watch" data-price="2299">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
             </div>
 
             <div class="product-card">
-                <div class="product-image"></div>
+                <div class="product-image">Image</div>
                 <div class="product-content">
                     <h3>Portable Speaker</h3>
                     <p>Powerful sound anywhere you go.</p>
                     <div class="product-footer">
                         <span class="price">₱899</span>
-                        <button class="cart-btn" data-name="Portable Speaker" data-price="899">Add to Cart</button>
+                        <button class="cart-btn" data-name="Portable Speaker" data-price="899">
+                            Add to Cart
+                        </button>
                     </div>
                 </div>
             </div>
@@ -177,20 +177,24 @@
     </div>
 </footer>
 
-<!-- CART -->
-<div class="cart-overlay" id="cartOverlay"></div>
+<!-- FLOATING CART -->
+<div class="floating-cart" id="openCart">
+    🛒 <span id="cartCount">0</span>
+</div>
 
-<div class="cart-sidebar" id="cartSidebar">
+<!-- MINI CART -->
+<div class="mini-cart" id="miniCart">
 
-    <div class="cart-header">
-        <h2>Your Cart</h2>
-        <button id="closeCart">✖</button>
+    <div class="mini-header">
+        <h3>Your Cart</h3>
     </div>
 
-    <div id="cartItems" class="cart-items"></div>
+    <div class="mini-items" id="cartItems">
+        <p style="opacity:0.6; text-align:center;">Empty cart</p>
+    </div>
 
-    <div class="cart-footer">
-        <h3>Total: ₱<span id="cartTotal">0</span></h3>
+    <div class="mini-footer">
+        <strong>Total: ₱<span id="cartTotal">0</span></strong>
         <button class="checkout-btn">Checkout</button>
     </div>
 
